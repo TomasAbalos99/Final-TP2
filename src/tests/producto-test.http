@@ -1,0 +1,50 @@
+### CREATE PRODUCTO
+POST http://localhost:3000/api/v1/productos
+Content-Type: application/json
+
+{
+  "producto": "Lapiz",
+  "stockAmount": 5
+}
+
+###
+
+### GET ALL PRODUCTOS
+GET http://localhost:3000/api/v1/productos
+
+###
+
+### GET PRODUCTO BY ID (reemplazar ID)
+GET http://localhost:3000/api/v1/productos/a17c77c1-51ba-45d8-9107-aa3a4d51daeb
+
+###
+
+### UPDATE SIN AUTH (debe fallar 401)
+PUT http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+Content-Type: application/json
+
+{
+  "stockAmount": 10
+}
+
+###
+
+### UPDATE CON API KEY (debe funcionar)
+PUT http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+Content-Type: application/json
+x-api-key: supersecreta123
+
+{
+  "stockAmount": 10
+}
+
+###
+
+### DELETE SIN AUTH (debe fallar 401)
+DELETE http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+
+###
+
+### DELETE CON API KEY (debe funcionar)
+DELETE http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+x-api-key: supersecreta123

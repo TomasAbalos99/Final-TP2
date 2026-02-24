@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "a17c77c1-51ba-45d8-9107-aa3a4d51daeb",
+      "producto": "Lapiz",
+      "stockAmount": 5,
+      "fechaIngreso": "2026-02-24"
+    },
+    {
+      "id": "5",
+      "producto": "Lavarropas",
+      "stockAmount": 10,
+      "fechaIngreso": "2026-02-24"
+    },
+     {
+      "id": "1",
+      "producto": "Globo aerostatico",
+      "stockAmount": 100,
+      "fechaIngreso": "2026-02-24"
+    }
+  ]
+}
