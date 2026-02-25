@@ -42,29 +42,26 @@ externo.
 
 1.  Instalar dependencias:
 
-
-
+```bash
+npm install
 ```
-    npm install
 
 2.  Crear archivo `.env` en la raíz:
 
-
-
+```env
+PORT=3000
+API_KEY=supersecreta123
 ```
-    PORT=3000
-    API_KEY=supersecreta123
 
 3.  Ejecutar el servidor:
 
-
-
+```bash
+npm run dev
 ```
-    npm run dev
 
 Servidor disponible en:
 
-    http://localhost:3000
+http://localhost:3000
 
 ------------------------------------------------------------------------
 

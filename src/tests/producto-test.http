@@ -14,13 +14,13 @@ GET http://localhost:3000/api/v1/productos
 
 ###
 
-### GET PRODUCTO BY ID (reemplazar ID)
-GET http://localhost:3000/api/v1/productos/a17c77c1-51ba-45d8-9107-aa3a4d51daeb
+### GET PRODUCTO BY ID 
+GET http://localhost:3000/api/v1/productos/1
 
 ###
 
 ### UPDATE SIN AUTH (debe fallar 401)
-PUT http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+PUT http://localhost:3000/api/v1/productos/5
 Content-Type: application/json
 
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
 ###
 
 ### UPDATE CON API KEY (debe funcionar)
-PUT http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+PUT http://localhost:3000/api/v1/productos/5
 Content-Type: application/json
 x-api-key: supersecreta123
 
@@ -41,10 +41,10 @@ x-api-key: supersecreta123
 ###
 
 ### DELETE SIN AUTH (debe fallar 401)
-DELETE http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+DELETE http://localhost:3000/api/v1/productos/1
 
 ###
 
 ### DELETE CON API KEY (debe funcionar)
-DELETE http://localhost:3000/api/v1/productos/REEMPLAZAR_ID_AQUI
+DELETE http://localhost:3000/api/v1/productos/1
 x-api-key: supersecreta123
