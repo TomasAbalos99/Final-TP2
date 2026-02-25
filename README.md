@@ -42,14 +42,14 @@ externo.
 
 1.  Instalar dependencias:
 
-```{=html}
+
 
 ```
     npm install
 
 2.  Crear archivo `.env` en la raíz:
 
-```{=html}
+
 
 ```
     PORT=3000
@@ -57,7 +57,7 @@ externo.
 
 3.  Ejecutar el servidor:
 
-```{=html}
+
 
 ```
     npm run dev
